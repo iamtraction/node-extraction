@@ -1,0 +1,28 @@
+{
+  "name": "ex.traction",
+  "version": "1.0.0",
+  "description": "A wrapper library to interact with ex.traction.",
+  "main": "./dist/main.js",
+  "repository": "https://github.com/TheBastionBot/bwapi.git",
+  "author": "Sankarsan Kampa",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "clean": "make clean",
+    "transpile": "./node_modules/.bin/tsc",
+    "lint": "./node_modules/.bin/eslint .",
+    "build": "yarn clean && yarn transpile",
+    "test": "yarn lint"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "@types/request": "^2.48.3",
+    "@types/request-promise-native": "^1.0.17",
+    "eslint": "^6.7.1",
+    "typescript": "^3.7.2"
+  },
+  "peerDependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8"
+  }
+}
